@@ -40,7 +40,7 @@
   gap: 100px;
 }
 
-img {
+.navbar img {
   height: 40px;
   width: 45px;
 }
@@ -49,12 +49,64 @@ img {
   font-size: 20px;
 }
 
-.main {
+main {
   background: var(--background);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--primary);
+  color: var(--secondary);
   width: 100%;
+}
+
+#portal-entero {
+  margin-top: 50px;
+  padding: 50px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.botones a {
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--secondary);
+  background-color: var(--primary);
+  padding: 8px 0;
+  text-align: center;
+  width: 100px;
+}
+
+.botones {
+  display: flex;
+  gap: 20px;
+}
+
+.info-div h1 {
+  font-size: 48px;
+  width: 50%;
+  font-weight: 800;
+}
+
+.div-card img {
+  width: 300px;
+  height: 300px;
+}
+
+.text-des p {
+  font-size: 20px;
+  color: var(--secondary);
+  text-align: center;
+}
+
+.text-des {
+  padding: 20px 200px;
 }
