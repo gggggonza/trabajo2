@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap");
+
 :root {
   --background: #474a48;
   --primary: rgb(66, 56, 56);
   --secondary: #8daa9d;
+  --tercero: #2b302d;
+  --cuarto: #4e5c54;
 }
 
 * {
@@ -10,40 +14,47 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  font-family: "Roboto";
 }
 
-.header {
+header {
   width: 100%;
   display: flex;
   text-align: center;
-  justify-content: space-between;
-}
-
-.logo {
-  height: 40%;
-}
-
-.navbar,
-.navbar-list {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
   height: 65px;
   padding: 0px 30px;
 
-  background: var(--background);
+  background: linear-gradient(to bottom, var(--primary), var(--background));
   font-weight: 600;
+}
+
+.logo {
+  height: 50%;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-list {
+  gap: 30px;
+}
+
+#menu-toggle,
+.menu-label {
+  display: none;
 }
 
 .navbar {
   gap: 100px;
 }
 
-.navbar img {
-  height: 40px;
-  width: 45px;
-}
 .navbar-list a {
   color: var(--secondary);
   font-size: 20px;
@@ -60,9 +71,7 @@ main {
 }
 
 #hero {
-  margin-top: 50px;
-  padding: 50px 0;
-
+  padding: 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,7 +86,7 @@ main {
   max-width: 80%;
 }
 
-.info-hero {
+.hero-info {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -106,7 +115,7 @@ main {
   gap: 20px;
 }
 
-.info-hero h1 {
+.hero-info h1 {
   font-size: 90px;
   width: 50%;
   font-weight: 1000;
@@ -137,7 +146,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 50px;
+  gap: 75px;
 }
 
 #info h2 {
@@ -175,13 +184,13 @@ main {
 /****** FOOTER ******/
 
 footer {
-  background: var(--background);
+  background: linear-gradient(to bottom, var(--background), var(--cuarto));
   display: flex;
   justify-content: space-around;
   color: var(--secondary);
   width: 100%;
-  padding: 50px 50px;
-  line-height: 100px;
+  padding: 70px 50px 30px;
+  line-height: 80px;
 }
 
 .container-footer {
@@ -196,17 +205,27 @@ footer {
   line-height: 40px;
 }
 .container-footer img {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 350px;
 }
 
 .icon-img img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 
 .container-footer h2 {
   font-size: 30px;
   width: 50%;
   display: inline;
+}
+
+.derechos-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.derechos-footer img {
+  height: 40px;
+  width: 40px;
 }
