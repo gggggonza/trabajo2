@@ -229,3 +229,9 @@ footer {
   height: 40px;
   width: 40px;
 }
+
+.iconos-info img {
+  height: 20px;
+  width: 20px;
+  gap: 3px;
+}
